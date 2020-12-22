@@ -1,5 +1,7 @@
 # Docker-Pintos-M1
 
+![Docker Image CI](https://github.com/IchenDEV/docker-pintos-m1/workflows/Docker%20Image%20CI/badge.svg)
+
 For easy develop pintos on macOS in GB126016 OS 2020 Fall, ZJUT
 
 ## Base on
