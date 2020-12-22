@@ -1,7 +1,6 @@
 FROM ubuntu@sha256:4e4bc990609ed865e07afc8427c30ffdddca5153fd4e82c20d8f0783a291e241
 ENV HOME /root
 RUN echo 'debconf debconf/frontend select Noninteractive' | debconf-set-selections &&\
-    sed -i s@/archive.ubuntu.com/@/mirrors.aliyun.com/@g /etc/apt/sources.list &&\
      apt-get clean &&\
      apt-get update && \
 		apt-get install -y sudo && \
