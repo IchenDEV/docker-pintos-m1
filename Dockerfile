@@ -15,7 +15,10 @@ RUN echo 'debconf debconf/frontend select Noninteractive' | debconf-set-selectio
 			gdb \
 			qemu qemu-system-i386\
             --fix-missing build-essential xorg-dev bison libgtk2.0-dev \
-            python3-pip 
+            python3-pip \
+			psmisc \
+			clang\
+			locales locales-all
 
 # Install gdbgui https://gdbgui.com/
 RUN pip3 install --upgrade gdbgui
