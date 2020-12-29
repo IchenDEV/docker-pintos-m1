@@ -1,16 +1,14 @@
 version: '3'
 services:
   dev:
-    build: .
+    image: idevlab/docker-pintos:latest
     container_name: pintos-dev
     volumes:
-      - pintos-volume:/root/code
+      - pintos-volume:/vagrant/code
     security_opt:
       - seccomp:unconfined
     cap_add:
       - SYS_PTRACE
-    ports:
-      - 5000:5000
 
 volumes:
   pintos-volume:
