@@ -7,4 +7,5 @@ RUN useradd --create-home --home-dir /home/vagrant --user-group vagrant
 RUN echo vagrant:vagrant | chpasswd
 RUN echo "vagrant ALL=(ALL) NOPASSWD: ALL" >> /etc/sudoers
 RUN puppet apply /puppet/manifests/site.pp --modulepath /puppet/modules
-RUN apt -y install language-pack-en
+RUN apt -y install language-pack-en 
+RUN chown -R vagrant /home/vagrant/

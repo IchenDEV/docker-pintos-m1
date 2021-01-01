@@ -4,7 +4,7 @@ services:
     image: idevlab/docker-pintos:latest
     container_name: pintos-dev
     volumes:
-      - pintos-volume:/vagrant/code
+      - pintos-volume:/home/vagrant/code
     security_opt:
       - seccomp:unconfined
     cap_add:
